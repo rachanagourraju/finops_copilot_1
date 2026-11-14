@@ -1,0 +1,5 @@
+name: finance_copilot
+version: "1.0.0"
+config-version: 2
+profile: finance_copilot
+model-paths: ["models"]

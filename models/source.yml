@@ -1,0 +1,10 @@
+version: 2
+sources:
+  - name: finance_raw
+    database: "{{ env_var('FINANCE_GCP_PROJECT_ID') }}"
+    schema: "{{ env_var('FINANCE_BIGQUERY_RAW_DATASET') }}"
+    tables:
+      - name: budget_lines
+      - name: months
+      - name: accounts
+      - name: cost_centers

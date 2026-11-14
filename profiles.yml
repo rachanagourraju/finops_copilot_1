@@ -1,0 +1,10 @@
+finance_copilot:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: oauth
+      project: "{{ env_var('FINANCE_GCP_PROJECT_ID') }}"
+      dataset: "{{ env_var('FINANCE_BIGQUERY_ANALYTICS_DATASET') }}"
+      location: "{{ env_var('FINANCE_BIGQUERY_LOCATION') }}"
+      threads: 2
